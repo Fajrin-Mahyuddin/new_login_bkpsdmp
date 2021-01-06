@@ -8,12 +8,16 @@
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="assets/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
     <title>Login</title>
   </head>
   <body>
     <header>
-      <img src="logo.svg" alt="Logo header" />
+      <img src="assets/logo.svg" alt="Logo header" />
     </header>
     <div class="container">
       <div class="left-layout">
@@ -25,6 +29,8 @@
           <div class="form-components">
             <div class="input-components">
               <label for="username">Username / Nomor Induk Pegawi</label>
+              <i class="fa fa-envelope-o"></i>
+
               <input
                 type="text"
                 autocomplete="off"
@@ -35,12 +41,14 @@
             </div>
             <div class="input-components">
               <label for="password">Kata Sandi</label>
+              <i class="fa fa-key"></i>
               <input
                 type="password"
                 id="password"
                 placeholder="kata sandi"
                 class="input"
               />
+              <span class="fa fa-eye" id="show_password"></span>
             </div>
             <button class="btn-submit">Masuk</button>
             <div class="form-options">
@@ -56,7 +64,7 @@
       <div class="right-layout"></div>
     </div>
     <footer>
-      <img src="footer_logo.png" alt="footerl logo" />
+      <img src="assets/footer_logo.png" alt="footerl logo" />
       <div>
         <span>&copy; 2021 Digital BKPSDMD</span>
         <span
@@ -65,4 +73,15 @@
       </div>
     </footer>
   </body>
+  <script>
+    document
+      .getElementById("show_password")
+      .addEventListener("click", function () {
+        if (document.getElementById("password").type === "password") {
+          document.getElementById("password").type = "text";
+        } else {
+          document.getElementById("password").type = "password";
+        }
+      });
+  </script>
 </html>
