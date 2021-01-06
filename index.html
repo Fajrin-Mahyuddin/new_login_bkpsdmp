@@ -3,9 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Login</title>
   </head>
   <body>
-    Login
+    <header>
+      <img src="logo.svg" alt="Logo header" />
+    </header>
+    <div class="container">
+      <div class="left-layout">
+        <div class="content">
+          <div class="title">
+            <span>Selamat Datang di Sistem Kinerja Kota Makassar</span>
+            <span>Silahkan Masuk</span>
+          </div>
+          <div class="form-components">
+            <div class="input-components">
+              <label for="username">Username / Nomor Induk Pegawi</label>
+              <input
+                type="text"
+                autocomplete="off"
+                id="username"
+                class="input"
+              />
+            </div>
+            <div class="input-components">
+              <label for="password">Kata Sandi</label>
+              <input type="password" id="password" class="input" />
+            </div>
+            <button class="btn-submit">Masuk</button>
+            <div class="form-options">
+              <div>
+                <input type="checkbox" id="ingat_saya" value="1" />
+                <label for="ingat_saya"> Ingat saya</label>
+              </div>
+              <a href="#">Lupa kata sandi ?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-layout"></div>
+    </div>
+    <footer>
+      <img src="footer_logo.png" alt="footerl logo" />
+      <div>
+        <span>&copy; 2021 Digital BKPSDMD</span>
+        <span
+          >Badan Kepegawaian dan Sumber Daya Manusia Daerah Kota Makassar</span
+        >
+      </div>
+    </footer>
   </body>
 </html>
