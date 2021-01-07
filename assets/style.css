@@ -108,6 +108,13 @@ body,
     width: 100%;
   }
 
+  .form-components .alert-panel {
+    background-color: red;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
   .input-components {
     display: flex;
     flex-direction: column;
@@ -153,6 +160,12 @@ body,
     bottom: 15%;
     margin-left: 10px;
     cursor: pointer;
+  }
+
+  .input-components .alert-on,
+  .input-components .alert-on:focus {
+    border: 1.8px solid red;
+    color: red;
   }
 
   .btn-submit {
@@ -310,7 +323,12 @@ body,
   .form-components {
     width: 100%;
   }
-
+  .form-components .alert-panel {
+    background-color: red;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 5px;
+  }
   .input-components {
     display: flex;
     position: relative;
