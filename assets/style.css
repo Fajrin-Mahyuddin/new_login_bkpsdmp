@@ -230,13 +230,6 @@ body,
     font-size: 12px;
     padding-left: 8px;
   }
-
-  .right-layout {
-    background-color: violet;
-    width: 60vw;
-    height: 100vh;
-    padding-top: 30px;
-  }
 }
 
 @media (min-width: 992px) {
