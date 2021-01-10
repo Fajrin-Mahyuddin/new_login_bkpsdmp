@@ -1,0 +1,455 @@
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+/* @supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+} */
+
+@media (max-width: 992px) {
+  /* .container {
+      display: flex;
+    } */
+
+  header,
+  footer {
+    position: absolute;
+    z-index: 2;
+    padding: 15px 25px;
+    width: 100vw;
+    color: #ffffff;
+    /* background-color: sandybrown; */
+  }
+
+  header {
+    top: 0;
+  }
+
+  header img {
+    width: 35vw;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    bottom: 0;
+  }
+  footer img {
+    padding-right: 10px;
+    width: 14vw;
+  }
+
+  footer div {
+    display: flex;
+    flex-direction: column;
+  }
+  footer div span:nth-child(1) {
+    font-size: 13px;
+  }
+  footer div span:nth-child(2) {
+    font-size: 11px;
+  }
+
+  .left-layout {
+    background-color: rgba(4, 24, 69, 0.892);
+    width: 100vw;
+    height: 100vh;
+    padding: 25px 0px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+  .left-layout::before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("bg-mini.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  .title span:nth-child(1) {
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-size: 15px;
+  }
+
+  .title span:nth-child(2) {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .content {
+    /* padding: 0 30px; */
+    align-items: flex-start;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    margin: 0 5vw;
+  }
+
+  .form-components {
+    width: 100%;
+  }
+
+  .form-components .alert-panel {
+    background-color: red;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .input-components {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    position: relative;
+  }
+
+  .input-components label {
+    margin-bottom: 5px;
+    padding-left: 15px;
+    font-size: 11px;
+    font-weight: 200;
+  }
+
+  .input-components input {
+    padding: 2px 30px;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+  }
+
+  .input-components input:focus {
+    border: none;
+    border-color: #ffffff;
+    outline: none;
+  }
+
+  .input-components i {
+    position: absolute;
+    z-index: 2;
+    color: #c0bcbc;
+    bottom: 15%;
+    margin-left: 10px;
+    font-size: 13px;
+  }
+
+  .input-components span {
+    position: absolute;
+    z-index: 2;
+    color: #c0bcbc;
+    right: 0;
+    margin-right: 10px;
+    bottom: 15%;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .input-components .alert-on,
+  .input-components .alert-on:focus {
+    border: 1.8px solid red;
+    color: red;
+  }
+
+  .btn-submit {
+    padding: 6px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: red;
+    color: #ffffff;
+    margin: 10px 0;
+    cursor: pointer;
+    letter-spacing: 2px;
+  }
+
+  .btn-submit:active,
+  .btn-submit:focus {
+    outline: none;
+  }
+
+  .form-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    margin-top: 5px;
+  }
+
+  .form-options div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form-options a {
+    font-size: 13px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  /*
+  
+  .form-options input {
+    border: 1.5px solid #ffffff;
+    background-color: transparent;
+    border-radius: 3px;
+    width: 15px;
+    height: 15px;
+    outline: none;
+    transition: box-shadow 0.2s;
+  }
+  
+  .form-options input:checked {
+    border: 1.5px solid red;
+    border-radius: 3px;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+  }
+  
+  */
+  .form-options label {
+    font-size: 12px;
+    padding-left: 8px;
+  }
+}
+
+@media (min-width: 992px) {
+  header,
+  footer {
+    position: absolute;
+    z-index: 2;
+    padding: 15px 25px;
+    width: 100vw;
+    color: #ffffff;
+    /* background-color: sandybrown; */
+  }
+
+  header {
+    top: 0;
+  }
+
+  header img {
+    width: 12vw;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    bottom: 0;
+  }
+  footer img {
+    padding-right: 10px;
+    width: 4vw;
+  }
+
+  footer div {
+    display: flex;
+    flex-direction: column;
+  }
+  footer div span:nth-child(1) {
+    font-size: 14px;
+  }
+  footer div span:nth-child(2) {
+    font-size: 12px;
+  }
+  .container {
+    display: flex;
+  }
+
+  .left-layout {
+    background-color: #041845;
+    width: 40vw;
+    height: 100vh;
+    padding: 25px 0px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px 0;
+    width: 100%;
+  }
+  .title span:nth-child(1) {
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-size: 15px;
+  }
+
+  .title span:nth-child(2) {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .content {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    margin: 0 5vw;
+  }
+
+  .form-components {
+    width: 100%;
+  }
+  .form-components .alert-panel {
+    background-color: red;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 5px;
+    width: inherit;
+  }
+  .input-components {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 10px 0;
+    width: inherit;
+  }
+
+  .input-components label {
+    margin-bottom: 5px;
+    padding-left: 15px;
+    font-size: 11px;
+    font-weight: 200;
+  }
+
+  .input-components input {
+    padding: 2px 35px;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+  }
+
+  .input-components input:focus {
+    border: none;
+    border-color: #ffffff;
+    outline: none;
+  }
+
+  .input-components .alert-on,
+  .input-components .alert-on:focus {
+    border: 1.8px solid red;
+    color: red;
+  }
+
+  .input-components i {
+    position: absolute;
+    z-index: 2;
+    color: #c0bcbc;
+    bottom: 14%;
+    margin-left: 10px;
+  }
+
+  .input-components span {
+    position: absolute;
+    z-index: 2;
+    color: #c0bcbc;
+    right: 0;
+    margin-right: 10px;
+    bottom: 15%;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .btn-submit {
+    padding: 6px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: red;
+    color: #ffffff;
+    margin: 10px 0;
+    cursor: pointer;
+    letter-spacing: 2px;
+  }
+
+  .btn-submit:active,
+  .btn-submit:focus {
+    outline: none;
+  }
+
+  .form-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    margin-top: 5px;
+  }
+
+  .form-options div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form-options a {
+    font-size: 13px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  /*
+
+.form-options input {
+  border: 1.5px solid #ffffff;
+  background-color: transparent;
+  border-radius: 3px;
+  width: 15px;
+  height: 15px;
+  outline: none;
+  transition: box-shadow 0.2s;
+}
+
+.form-options input:checked {
+  border: 1.5px solid red;
+  border-radius: 3px;
+  background-color: red;
+  width: 15px;
+  height: 15px;
+}
+
+*/
+  .form-options label {
+    font-size: 12px;
+    padding-left: 8px;
+  }
+
+  .right-layout {
+    background-color: violet;
+    width: 60vw;
+    height: 100vh;
+    padding-top: 30px;
+    background-image: url("bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
