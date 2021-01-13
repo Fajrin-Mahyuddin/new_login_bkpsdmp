@@ -279,7 +279,7 @@ body,
 
   .left-layout {
     background-color: #041845;
-    width: 50vw;
+    width: 40vw;
     height: 100vh;
     padding: 25px 0px;
     align-items: center;
@@ -443,12 +443,13 @@ body,
   }
 
   .right-layout {
-    width: 50vw;
+    background-color: #0f285f;
+    width: 60vw;
     height: 100vh;
     padding-top: 30px;
     background-image: url("bg.png");
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 85% 100%;
   }
 }
